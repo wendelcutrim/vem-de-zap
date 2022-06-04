@@ -41,12 +41,12 @@ main section  {
     margin: 1rem 0;
 }
 
-main section form {
+main section .form {
     display: flex;
     margin: 1.7rem 0;
 }
 
-main section form input[type="text"] {
+main section .form input[type="text"] {
     height: 40px;
     width: 400px;
     padding: 10px;
@@ -54,7 +54,7 @@ main section form input[type="text"] {
     border-radius: 8px;
 }
 
-main section form button {
+main section .form button {
     margin-left: 0.5rem;
     border: none;
     width: 100px;
@@ -63,10 +63,6 @@ main section form button {
     font-weight: bold;
     border-radius: 8px;
 
-}
-
-main article {
-    background-color: white;
 }
 
 .fa-whatsapp-square {
@@ -79,20 +75,34 @@ main article {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    list-style: none;
 }
 
-.cards article {
+.cards li {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 30%;
-    margin: 10px 10px;
+    margin: 15px 15px;
     border-radius: 8px;
     padding: 10px;
     position: relative;
+    background-color: white
 }
 
-.cards .close {
+.cards li:hover {
+    -webkit-box-shadow: 6px 6px 7px 0px #00000080; 
+    box-shadow: 6px 6px 7px 0px #00000080; 
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
+
+.cards li:not(:hover){
+    transform: scale(1.0);
+    transition: all 0.6s;
+}
+
+.close {
     display: block;
     background-color: red;
     color: white;
@@ -103,4 +113,110 @@ main article {
     position: absolute;
     top: -8px;
     left: -6px;
+}
+
+.close:hover {
+    transform: scale(1.2);
+    border: 2px solid black;
+    transition: all 1.2s;
+
+}
+
+.close:not(:hover) {
+    transform: scale(1.0);
+    transition: all 0.6s
+
+}
+
+@media (max-width: 899px) {
+    .cards li {
+        width: 30%;
+        margin: 10px;
+        padding: 15px;
+        background-color: white
+    }
+}
+
+@media (max-width: 760px) {
+    header .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .container {
+        width: 100%;
+    }
+
+    main .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    main section .form input[type="text"] {
+        height: 80px;
+        width: 80%;
+        padding: 10px;
+        
+    }
+    
+    main section .form button {
+        width: 80%;
+        padding: 10px;
+        height: 40px;
+        margin: 10px 0 0 0;
+    }
+
+    .cards li {
+        width: 80%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+}
+    
+@media (max-width: 480px) {
+    header .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .container {
+        width: 100%;
+    }
+
+    main .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    main section .form input[type="text"] {
+        height: 80px;
+        width: 80%;
+        padding: 10px;
+        
+    }
+    
+    main section .form button {
+        width: 80%;
+        padding: 10px;
+        height: 40px;
+        margin: 10px 0 0 0;
+    }
+
+    .cards li {
+        width: 80%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .cards .close {
+        display: block;
+    }
 }
