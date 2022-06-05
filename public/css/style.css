@@ -9,6 +9,7 @@
 body {
     --bg-color: #34af23;
     --btn-primary-color: #239a13;
+    --btn-secundary-color: #1d6014;
     background-color:rgb(213, 213, 213);
     font-family: "Roboto";
 }
@@ -62,7 +63,21 @@ main section .form button {
     color: white;
     font-weight: bold;
     border-radius: 8px;
+    cursor: pointer;
+}
 
+main section .form button:hover {
+    background-color: var(--btn-secundary-color);
+    transition: all 1s;
+}
+
+main section .form button:not(:hover) {
+    background-color: var(--btn-primary-color);
+    transition: all 0.6s;
+}
+
+main section h2 {
+   color: #525252; 
 }
 
 .fa-whatsapp-square {
@@ -87,7 +102,8 @@ main section .form button {
     border-radius: 8px;
     padding: 10px;
     position: relative;
-    background-color: white
+    background-color: white;
+    cursor: pointer;
 }
 
 .cards li:hover {
@@ -113,6 +129,7 @@ main section .form button {
     position: absolute;
     top: -8px;
     left: -6px;
+    cursor: pointer;
 }
 
 .close:hover {
