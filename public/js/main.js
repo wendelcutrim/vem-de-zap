@@ -42,12 +42,10 @@ function createElement (value) {
     li.addEventListener("mouseover", () => button.style.display = "block");
     li.addEventListener("mouseout", () => button.style.display = "none");
 
-    li.addEventListener("touchstart", () => button.style.display = "block")
-
+    li.addEventListener("touchstart", () => button.style.display = "block");
 
     button.addEventListener("click", () => deleteCard(li));
     
-
     li.appendChild(button);
     li.appendChild(p);
     li.appendChild(i);
@@ -56,8 +54,6 @@ function createElement (value) {
 
     ulCards.appendChild(li);
 }
-
-
 
 buttonSubmit.addEventListener("click", (event) => {
     createElement(message.value);
