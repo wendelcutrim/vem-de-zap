@@ -97,6 +97,6 @@ The cotainer will be locked in 1280px;
 ![Project Screenshoot](./public/img/vemdezap-mobile05.png)
 
 
-## Athor
+## Author
 
 - [@wendelcutrim](https://www.github.com/wendelcutrim)
