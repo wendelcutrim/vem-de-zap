@@ -1,4 +1,4 @@
-# manda-zap
+# vem-de-zap
 
 ![Project Screenshoot](./public/img/vemdezap-1.png)
 
