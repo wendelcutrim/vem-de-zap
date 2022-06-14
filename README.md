@@ -6,13 +6,13 @@
 
 Created this project to practice my studies about Javascript DOM.
 
-On this project **manda-zap** you can create standard messages that can be sent on WhatsApp and if you wanna destroy some message who are stored, it's possible too.
+On this project **vem-de-zap** you can create standard messages that can be sent on WhatsApp and if you wanna destroy some message who are stored, it's possible too.
 
 [![GitHub license](https://img.shields.io/github/license/wendelcutrim/manda-zap)](https://github.com/wendelcutrim/manda-zap/blob/main/LICENSE)
 
 ## How to see the project?
 
-You can see the project through the following link: https://wendelcutrim.github.io/manda-zap/
+You can see the project through the following link: https://wendelcutrim.github.io/vem-de-zap/
 
 ## Tech Stack
 
